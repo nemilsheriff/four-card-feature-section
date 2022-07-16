@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: hsl(0deg, 0%, 98%);
+}
+body .container {
+  margin: 3.5rem 2rem;
+}
+body .container .main-text {
+  text-align: center;
+}
+body .container .main-text .sub-heading {
+  font-size: 1.55rem;
+  font-weight: 200;
+  color: hsl(229deg, 6%, 66%);
+}
+@media (min-width: 1024px) {
+  body .container .main-text .sub-heading {
+    font-size: 1.75rem;
+  }
+}
+body .container .main-text .heading {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: hsl(234deg, 12%, 34%);
+}
+@media (min-width: 1024px) {
+  body .container .main-text .heading {
+    font-size: 1.75rem;
+  }
+}
+body .container .main-text .text {
+  color: hsl(229deg, 6%, 66%);
+  font-size: 15px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1024px) {
+  body .container .main-text .text {
+    font-size: 1.2rem;
+    padding: 0 23rem;
+  }
+}
+@media (min-width: 1024px) {
+  body .container .cards {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  body .container .cards .group-one {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  body .container .cards .group-three {
+    display: flex;
+    align-items: center;
+  }
+}
+body .container .cards .card-item {
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (min-width: 1024px) {
+  body .container .cards .card-item {
+    width: 250px;
+    height: 225px;
+  }
+}
+body .container .cards .card-item .card-heading {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsl(234deg, 12%, 34%);
+  padding-bottom: 0.5rem;
+}
+body .container .cards .card-item .card-content {
+  color: hsl(229deg, 6%, 66%);
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+body .container .cards .card-item .logo {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container .cards .green {
+  border-top: hsl(180deg, 62%, 55%) 5px solid;
+}
+body .container .cards .red {
+  border-top: hsl(0deg, 78%, 62%) 5px solid;
+}
+body .container .cards .yellow {
+  border-top: hsl(34deg, 97%, 64%) 5px solid;
+}
+body .container .cards .blue {
+  border-top: hsl(212deg, 86%, 64%) 5px solid;
+}/*# sourceMappingURL=style.css.map */

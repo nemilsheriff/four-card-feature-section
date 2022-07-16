@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import 'breakpoints';
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 15px;
+      font-weight: 400;
+      background-color: $very-light-gray;
+
+      .container {
+            margin: 3.5rem 2rem;
+
+            .main-text {
+                  text-align: center;
+
+                  .sub-heading {
+                        font-size: 1.55rem;
+                        font-weight: 200;
+                        color: $grayish-blue;
+
+                        @include xl {
+                              font-size: 1.75rem;
+                        }
+                  }
+
+                  .heading {
+                        font-size: 1.55rem;
+                        font-weight: 600;
+                        color: $very-dark-blue;
+
+                        @include xl {
+                              font-size: 1.75rem;
+                        }
+                  }
+
+                  .text {
+                        color: $grayish-blue;
+                        font-size: 15px;
+                        margin-top: 1rem;
+                        margin-bottom: 4rem;
+
+                        @include xl {
+                              font-size: 1.2rem;
+                              padding: 0 23rem;
+                        }
+                  }
+            }
+
+            .cards {
+                  @include xl {
+                        display: flex;
+                        margin: 0 auto;
+                        justify-content: center;
+                        gap: 30px;
+                  }
+
+                  .group-one {
+                        @include xl {
+                              display: flex;
+                              align-items: center;
+                        }
+                  }
+
+                  .group-three {
+                        @include xl {
+                              display: flex;
+                              align-items: center;
+                        }
+                  }
+
+                  .card-item {
+                        margin-bottom: 2rem;
+                        background-color: white;
+                        border-radius: 0.5rem;
+                        padding: 2rem;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                        @include xl {
+                              width: 250px;
+                              height: 225px;
+
+                        }
+
+                        .card-heading {
+                              font-weight: 600;
+                              font-size: 1.5rem;
+                              color: $very-dark-blue;
+                              padding-bottom: 0.5rem;
+                        }
+
+                        .card-content {
+                              color: $grayish-blue;
+                              font-size: 1rem;
+                              padding-bottom: 2rem;
+                        }
+
+                        .logo {
+                              display: flex;
+                              justify-content: flex-end;
+                        }
+                  }
+
+                  .green {
+                        border-top: $cyan 5px solid;
+                  }
+
+                  .red {
+                        border-top: $red 5px solid;
+                  }
+
+                  .yellow {
+                        border-top: $orange 5px solid;
+                  }
+
+                  .blue {
+                        border-top: $blue 5px solid;
+                  }
+            }
+      }
+}
